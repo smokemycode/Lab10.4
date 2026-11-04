@@ -1,3 +1,4 @@
+// The shape of our data
 export type Post = {
     id: number;
     slug: string;
@@ -5,6 +6,7 @@ export type Post = {
     content: string;
 }
 
+// The mock "Fake" database
 export const posts: Post[] = [
     {
         id: 1,
@@ -26,6 +28,7 @@ export const posts: Post[] = [
     }
 ]
 
+// Helper function to find one post by its slug.
 export function getPostBySlug(slug: string): Post | undefined {
     return posts.find((post) => post.slug === slug);
 }
