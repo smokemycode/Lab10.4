@@ -44,11 +44,11 @@ src/
 ├── lib/
 │ └── posts.ts // mock blog data + getPostBySlug helper
 ├── pages/
-│ ├── Home.tsx
+│ ├── Admin.tsx
 │ ├── BlogIndex.tsx // list of all posts
 │ ├── BlogPost.tsx // one post, found by slug from URL
-│ ├── Login.tsx
-│ └── Admin.tsx
+│ ├── Home.tsx
+│ └── Login.tsx
 ├── App.tsx // routes + providers
 └── main.tsx // entry point
 ```
