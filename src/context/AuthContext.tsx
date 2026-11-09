@@ -25,7 +25,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 	const value = { isAuthenticated, login, logout };
 
 	// The way the value is passed down to every child component
-	return <AuthContext.Provider value={}>{children}</AuthContext.Provider>;
+	return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
 // Custom hook to login/logout
